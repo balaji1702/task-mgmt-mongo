@@ -4,8 +4,12 @@ from schema import Task
 from typing import Optional
 from db_config import task_collection
 from fastapi import FastAPI, HTTPException,status
-#some comment for testing git
+
 app = FastAPI()
+
+
+
+
 @app.post("/create-task")
 def create_task(new_task:Task):
     task=new_task.dict()
