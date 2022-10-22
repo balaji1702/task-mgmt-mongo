@@ -6,6 +6,10 @@ from db_config import task_collection
 from fastapi import FastAPI, HTTPException,status
 
 app = FastAPI()
+
+
+
+
 @app.post("/create-task")
 def create_task(new_task:Task):
     task=new_task.dict()
