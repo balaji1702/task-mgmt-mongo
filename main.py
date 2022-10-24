@@ -107,6 +107,7 @@ def delete_all():
     except Exception as error:
         raise HTTPException(status_code=status.HTTP_417_EXPECTATION_FAILED, detail= {"msg":"cannot perform the task debug it",
           "error":str(error)})
+        
 
     
 
